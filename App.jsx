@@ -1,16 +1,22 @@
-import React from 'react'
-import Peoples from './Components/Peoples'
-import { people } from './data'
+
+
+
+import Books from './Components/Books';
+import Gallery from './Components/Gallary';
+import Products from './Components/Product';
+import Students from './Components/Students';
+import Peoples from './Components/Peoples';
 function App() {
-  // return <Peoples data={people} />
   return (
-    <>
-      {people.map((e) => {
-        console.log(e)
-        return <Peoples id={e.id} name={e.name} age={e.age} email={e.email} />
-      })}
-    </>
-  )
+    <div className="App">
+    
+      <Gallery />
+      <Books />
+      <Products />
+      <Students/>
+      <Peoples/>
+    </div>
+  );
 }
 
-export default App
+export default App;
